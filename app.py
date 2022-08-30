@@ -1,5 +1,5 @@
-from equations import mifflin_st_jeor
-from inputs import getFloat, getChar
+from methods.equations import mifflin_st_jeor
+from methods.inputs import getFloat, getChar
 
 age = getFloat('age')
 height = getFloat('height')
