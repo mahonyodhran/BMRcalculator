@@ -4,15 +4,16 @@ from methods.inputs import get_float, get_char, tdee_info
 age = get_float('age')
 height = get_float('height')
 weight = get_float('weight')
-gender = get_char()
+gender = get_char('gender')
 
 bmr = mifflin_st_jeor(age, height, weight, gender)
 
+print('\n*** TDEE ***')
 #TO BE EXTRACTED#
 tdee_result = input('Would you like to calculate your TDEE? [y/N]: ')
 if tdee_result.lower() =='y':
     tdee(bmr) 
-    info = input('Would you like more info on TDEE? [y/N]: ')
+    info = input('\nWould you like more info on TDEE? [y/N]: ')
     if info.lower() =='y':
         tdee_info() 
 #TO BE EXTRACTED#
