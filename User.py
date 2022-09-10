@@ -1,4 +1,4 @@
-class User:
+class User_Profile:
   def __init__(self, name, age, weight, height, gender):
     self.name = name
     self.age = age
