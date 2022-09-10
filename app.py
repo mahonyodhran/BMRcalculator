@@ -1,12 +1,15 @@
 from methods.equations import mifflin_st_jeor, tdee
 from methods.inputs import get_float, get_char, tdee_info
+from User import User_Profile
 
 age = get_float('age')
 height = get_float('height')
 weight = get_float('weight')
 gender = get_char('gender')
 
-bmr = mifflin_st_jeor(age, height, weight, gender)
+user = User_Profile("Odhran", age, weight, height, gender)
+
+bmr = mifflin_st_jeor(user.age, user.height, user.weight, user.gender)
 
 print('\n*** TDEE ***')
 #TO BE EXTRACTED#
