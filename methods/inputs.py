@@ -12,18 +12,6 @@ def get_float(value):
             print(f"Your {value} should be a number!")
 
 
-def tdee_info():
-    '''print out tdee information
-    '''
-    print(
-        "\n1: Sedentary\
-            \n2: Lightly Active [1-3 times per week]\
-            \n3: Moderately Active [3-5 times per week]\
-            \n4: Very Active [6-7 times per week]\
-            \n5: Extremely Active [2x per day / Athlete etc.]"
-    )
-
-
 def get_gender():
     '''get user input for a gender
     '''
