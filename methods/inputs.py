@@ -5,12 +5,6 @@ def get_float(value):
         except ValueError:
             print("Your {} should be a number!".format(value))
 
-def get_char(value):
-    answer = input('Please enter your {}: '.format(value))
-    if answer.lower() =='y':
-        return True
-    else:
-        return False
 
 def tdee_info():
             print('\n1: Sedentary\
@@ -18,3 +12,11 @@ def tdee_info():
             \n3: Moderately Active [3-5 times per week]\
             \n4: Very Active [6-7 times per week]\
             \n5: Extremely Active [2x per day / Athlete etc.]')
+            
+def get_gender():
+    while True:
+        gender = str(input("Are you [m]ale or [f]emale? :")).lower()
+        if gender == str('m') or gender == str('f'):
+            return gender
+        else:
+            print("Please enter [m] or [f]")
