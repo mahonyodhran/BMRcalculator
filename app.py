@@ -1,5 +1,6 @@
 from methods.equations import mifflin_st_jeor, tdee
-from methods.inputs import get_float, tdee_info, get_gender
+from methods.inputs import get_float, get_gender
+from methods.information import tdee_info
 from user import User
 
 age = get_float('age')
