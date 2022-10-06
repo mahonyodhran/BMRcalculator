@@ -1,12 +1,20 @@
+'''module for any input required methods
+'''
+
+
 def get_float(value):
+    '''get user input for a float amount
+    '''
     while True:
         try:
-            return float(input("Please enter your {}: ".format(value)))
+            return float(input(f"Please enter your {value}: "))
         except ValueError:
-            print("Your {} should be a number!".format(value))
+            print(f"Your {value} should be a number!")
 
 
 def tdee_info():
+    '''print out tdee information
+    '''
     print(
         "\n1: Sedentary\
             \n2: Lightly Active [1-3 times per week]\
@@ -17,9 +25,10 @@ def tdee_info():
 
 
 def get_gender():
+    '''get user input for a gender
+    '''
     while True:
         gender = str(input("Are you [m]ale or [f]emale? :")).lower()
         if gender == str("m") or gender == str("f"):
             return gender
-        else:
-            print("Please enter [m] or [f]")
+        print("Please enter [m] or [f]")
