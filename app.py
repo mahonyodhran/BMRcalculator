@@ -1,7 +1,7 @@
 from methods.equations import mifflin_st_jeor, tdee
 from methods.inputs import get_float, get_gender
 from methods.information import tdee_info
-from user import User
+from models.user import User
 
 age = get_float('age')
 height = get_float('height')
@@ -22,4 +22,4 @@ if tdee_result.lower() =='y':
         tdee_info() 
 #TO BE EXTRACTED#
 
-print('Thanks for using the system, goodbye!')
+print('\nThanks for using the system, goodbye!')
